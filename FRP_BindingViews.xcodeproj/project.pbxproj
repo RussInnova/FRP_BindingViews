@@ -12,9 +12,12 @@
 		538DC4CD1D198EBE007101FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538DC4CB1D198EBE007101FC /* Main.storyboard */; };
 		538DC4CF1D198EBE007101FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 538DC4CE1D198EBE007101FC /* Assets.xcassets */; };
 		538DC4D21D198EBE007101FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 538DC4D01D198EBE007101FC /* LaunchScreen.storyboard */; };
+		538DC4DA1D199331007101FC /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538DC4D91D199331007101FC /* CircleViewModel.swift */; };
+		99F8808DFC7F5069AA1E1762 /* Pods_FRP_BindingViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4F9ABE389672233C32096 /* Pods_FRP_BindingViews.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		512DA498029812B958912A08 /* Pods-FRP_BindingViews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP_BindingViews.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRP_BindingViews/Pods-FRP_BindingViews.release.xcconfig"; sourceTree = "<group>"; };
 		538DC4C41D198EBE007101FC /* FRP_BindingViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRP_BindingViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538DC4C71D198EBE007101FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		538DC4C91D198EBE007101FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		538DC4CE1D198EBE007101FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		538DC4D11D198EBE007101FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		538DC4D31D198EBE007101FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538DC4D91D199331007101FC /* CircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		8E42FB3656DC141120CA2832 /* Pods-FRP_BindingViews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRP_BindingViews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRP_BindingViews/Pods-FRP_BindingViews.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A4F9ABE389672233C32096 /* Pods_FRP_BindingViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRP_BindingViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F8808DFC7F5069AA1E1762 /* Pods_FRP_BindingViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				538DC4C61D198EBE007101FC /* FRP_BindingViews */,
 				538DC4C51D198EBE007101FC /* Products */,
+				DCE908E45A8390ABA8FE4EA8 /* Pods */,
+				5F14ACC87083831E1FE61A7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				538DC4CE1D198EBE007101FC /* Assets.xcassets */,
 				538DC4D01D198EBE007101FC /* LaunchScreen.storyboard */,
 				538DC4D31D198EBE007101FC /* Info.plist */,
+				538DC4D91D199331007101FC /* CircleViewModel.swift */,
 			);
 			path = FRP_BindingViews;
+			sourceTree = "<group>";
+		};
+		5F14ACC87083831E1FE61A7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4F9ABE389672233C32096 /* Pods_FRP_BindingViews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE908E45A8390ABA8FE4EA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E42FB3656DC141120CA2832 /* Pods-FRP_BindingViews.debug.xcconfig */,
+				512DA498029812B958912A08 /* Pods-FRP_BindingViews.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 538DC4D61D198EBE007101FC /* Build configuration list for PBXNativeTarget "FRP_BindingViews" */;
 			buildPhases = (
+				7889C2C31B90571E4DD88AD1 /* Check Pods Manifest.lock */,
 				538DC4C01D198EBE007101FC /* Sources */,
 				538DC4C11D198EBE007101FC /* Frameworks */,
 				538DC4C21D198EBE007101FC /* Resources */,
+				DF32DCBC02FF3E608334A11D /* Embed Pods Frameworks */,
+				264DA94AC596516AC7D7F5E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					538DC4C31D198EBE007101FC = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -130,11 +161,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		264DA94AC596516AC7D7F5E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP_BindingViews/Pods-FRP_BindingViews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7889C2C31B90571E4DD88AD1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF32DCBC02FF3E608334A11D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRP_BindingViews/Pods-FRP_BindingViews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		538DC4C01D198EBE007101FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538DC4DA1D199331007101FC /* CircleViewModel.swift in Sources */,
 				538DC4CA1D198EBE007101FC /* ViewController.swift in Sources */,
 				538DC4C81D198EBE007101FC /* AppDelegate.swift in Sources */,
 			);
@@ -247,23 +327,27 @@
 		};
 		538DC4D71D198EBE007101FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E42FB3656DC141120CA2832 /* Pods-FRP_BindingViews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FRP_BindingViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "russinnova.FRP-BindingViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		538DC4D81D198EBE007101FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512DA498029812B958912A08 /* Pods-FRP_BindingViews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FRP_BindingViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "russinnova.FRP-BindingViews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -286,6 +370,7 @@
 				538DC4D81D198EBE007101FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
